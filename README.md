@@ -2,20 +2,16 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Running the application
 
-Install the dependencies and run the development server, as follows. Docker setup forthcoming!
+You must have Node.js and one of {`npm`, `pnpm`, `yarn`} on your system.
+
+Install the dependencies, then build and run the application as follows.
 
 ```bash
-npm install
-npm run dev
+npm install && npm run build && npm run start
 # or
-yarn install
-yarn dev
+pnpm install && pnpm build && pnpm start
 # or
-pnpm install
-pnpm dev
-# or
-bun install
-bun dev
+yarn install && yarn build && yarn start
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
