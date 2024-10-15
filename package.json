@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "tsx server.js",
-    "build": "next build",
+    "build": "prisma generate && next build",
     "start": "NODE_ENV=production tsx server.js",
     "lint": "next lint",
     "seed": "node prisma/seed.js",
