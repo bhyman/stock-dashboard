@@ -4,17 +4,22 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "next dev",
+    "dev": "tsx server.js",
     "build": "next build",
-    "start": "next start",
+    "start": "NODE_ENV=production tsx server.js",
     "lint": "next lint",
-    "seed": "node prisma/seed.js"
+    "seed": "node prisma/seed.js",
+    "format": "prettier --check --ignore-path .gitignore '**/*.{ts,tsx,js}'",
+    "format:fix": "prettier --write --ignore-path .gitignore '**/*.{ts,tsx,js}'"
   },
   "dependencies": {
     "@prisma/client": "5.19.1",
     "next": "14.2.13",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "recharts": "^2.12.7",
+    "socket.io": "^4.8.0",
+    "socket.io-client": "^4.8.0"
   },
   "devDependencies": {
     "@types/node": "^20.16.5",
@@ -22,10 +27,13 @@
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.2.13",
+    "eslint-config-prettier": "^9.1.0",
     "postcss": "^8",
+    "prettier": "^3.3.3",
     "prisma": "^5.19.1",
     "tailwindcss": "^3.4.1",
     "ts-node": "^10.9.2",
+    "tsx": "^4.19.1",
     "typescript": "^5"
   },
   "packageManager": "pnpm@8.14.3+sha1.872b21adeaae4e71acd5c551ba848d927d6aa446"

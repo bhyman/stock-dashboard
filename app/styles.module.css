@@ -1,0 +1,32 @@
+/* Alert styling is courtesy of https://alvarotrigo.com/blog/css-alerts/ #5. */
+.alert {
+  padding: .7143rem 1.071rem;
+  margin: .429rem 0;
+  border-radius: 2px;
+  border: 1px solid transparent;
+  color: #000;
+}
+
+.alert-success {
+  background-color: #E6FFFA;
+  border-color: #38B2AC;
+  color: #325B5F;
+}
+
+.alert-error {
+  background-color: #Fff5f5;
+  border-color: #FC8181;
+  color: #C53030;
+}
+
+.basicBox {
+  border: 1px solid #CCC;
+  margin: 2px;
+  padding: 5px;
+}
+
+.stockChartContainer {
+  width: 320px;
+  height: 200px;
+  margin: 10px;
+}
